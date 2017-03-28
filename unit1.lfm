@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 182
+  Left = 128
   Height = 240
-  Top = 188
+  Top = 210
   Width = 320
   Caption = 'progressCalc'
   ClientHeight = 240
