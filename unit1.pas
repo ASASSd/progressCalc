@@ -40,7 +40,7 @@ type
 
 var
   Form1: TForm1;
-  a1, a2, a3, a4, a5, d, n, sum, an:int64;
+  a1, a2, a3, a4, a5, d, n, sum, an, cout:int64;
 
 implementation
 
@@ -102,11 +102,16 @@ label5.caption:='    ';
 label7.caption:='    ';
 label6.visible:=false;
 c.Visible:=false;
+cout:=0;
 end;
 
 procedure TForm1.CheckBox1Change(Sender: TObject);
 begin
-  c.visible:=true;
+  cout:=cout + 1;
+  if cout mod 2 <> 0 then
+  c.visible:=true
+  else
+  c.visible:=false;
 end;
 
 
